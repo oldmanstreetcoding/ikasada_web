@@ -1,0 +1,16 @@
+{
+  "name": "submission_one",
+  "version": "1.0.0",
+  "description": "The First Submission For Dicoding Build Progressive Web Apps Course",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ahmad Furqan",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.10.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
