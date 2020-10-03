@@ -9,7 +9,6 @@ $(document).ready(() => {
     });
 
     $('.sidenav').sidenav();
-
     // end load menu
 
     // start load detil profil
@@ -25,7 +24,6 @@ $(document).ready(() => {
         const detil = $(this).attr('id');
         loadprofil(detil);
     });
-
     // end load detil profil
 
     // start load page
@@ -60,7 +58,6 @@ $(document).ready(() => {
     });
 
     loadpage('beranda');
-
     // end load page
 
     // start load form login
@@ -71,6 +68,29 @@ $(document).ready(() => {
     });
 
     $('.modal').modal();
-
     // end load form login
+
+    // start script untuk membuat tombol go to the top
+    mybutton = document.getElementById('goTop');
+
+    const scrollFunction = () => {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = 'block';
+        } else {
+            mybutton.style.display = 'none';
+        }
+    };
+
+    window.onscroll = function () {
+        scrollFunction();
+    };
+
+    $(document).on('click', '#goTop', () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    });
+    // end script untuk membuat tombol go to the top
+
+    const el = document.querySelector('.tabs');
+    const instance = M.Tabs.init(el, {});
 });
