@@ -1,3 +1,22 @@
 <div class="container">
-    <h5>Profil</h5>
+    <div class="row center">
+        <h5 class="judul-halaman teal-text text-lighten-1">
+            <i class="small material-icons">menu_book</i> Profil Organisasi
+        </h5>
+        <div class="col s12">
+            <ul class="tabs">
+                <li class="tab col s3 tabprofil" id="sambutan"><a href="#test1" class="active">Sambutan</a></li>
+                <li class="tab col s3 tabprofil" id="sejarah"><a href="#test2">Sejarah</a></li>
+                <li class="tab col s3 tabprofil" id="visimisi"><a href="#test3">Visi & Misi</a></li>
+                <li class="tab col s3 tabprofil" id="pengurus"><a href="#test4">Kepengurusan</a></li>
+            </ul>
+        </div>
+        <div class="col s12" id="boxprofil" style="margin-top: 30px;">
+        </div>
+    </div>
 </div>
+
+<script>
+    var el = document.querySelector('.tabs');
+    var instance = M.Tabs.init(el, {});
+</script>

@@ -34,3 +34,20 @@ footer {
     margin-top: 25px;
     margin-bottom: 20px;
 }
+
+.tabs .tab a{
+    color: teal;
+}
+
+.tabs .tab a:hover {
+    background-color:#eee;
+    color:#000;
+}
+
+.tabs .tab a.active {
+    color: black;
+}
+
+.tabs .indicator {
+    background-color:#000;
+} 
