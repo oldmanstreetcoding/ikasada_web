@@ -61,7 +61,7 @@ $(document).ready(() => {
     // end load page
 
     // start load form login
-    $(document).on('click', '#showlogin', () => {
+    $(document).on('click', '.showlogin', () => {
         $.get('../pages/component/boxlogin.html', (data) => {
             $('#boxlogin').html(data);
         });
@@ -91,6 +91,11 @@ $(document).ready(() => {
     });
     // end script untuk membuat tombol go to the top
 
-    const el = document.querySelector('.tabs');
-    const instance = M.Tabs.init(el, {});
+    // navigasi tab menu di halaman profil
+    $('.tabs').tabs();
+
+    // floating button
+    $('.fixed-action-btn').floatingActionButton({
+        direction: 'left',
+    });
 });
