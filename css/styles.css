@@ -49,7 +49,7 @@ footer {
 }
 
 .tabs .tab a.active {
-    color: black;
+    color: teal;
 }
 
 .tabs .indicator {
