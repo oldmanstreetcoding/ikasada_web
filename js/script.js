@@ -16,6 +16,8 @@ $(document).ready(() => {
         $.get(`../pages/profil/${detil}.html`, (data, status) => {
             if (status === 'success') {
                 $('#boxprofil').html(data);
+            } else {
+                $('#boxprofil').html('Data Tidak Ditemukan !');
             }
         });
     };
@@ -44,6 +46,8 @@ $(document).ready(() => {
                 if (page === 'profil') {
                     loadprofil('sambutan');
                 }
+            } else {
+                $('#body-content').html('Halaman Tidak Ditemukan !');
             }
         });
     };

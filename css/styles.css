@@ -63,12 +63,12 @@ footer {
 #goTop {
     display: none; 
     position: fixed; 
-    bottom: 25px; 
-    right: 30px; 
+    bottom: 83px; 
+    right: 23px; 
     z-index: 99; 
     border: none; 
     outline: none; 
-    background-color: tomato; 
+    background-color: teal; 
     color: white; 
     cursor: pointer; 
     padding: 15px; 
@@ -101,8 +101,23 @@ footer {
     cursor: pointer;
 }
 
+.hrdiv {
+    display: none
+}
+
+#boxprofil {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
 @media screen and (max-width: 400px) {
-    #fotosambutan, #logoikasada, #btn-float {
+    #fotosambutan, #logoikasada {
         display: none;
+    }
+
+    .hrdiv{
+        border: 1px dashed grey;
+        display: block;
+        width: 90%;
     }
 }
