@@ -4,11 +4,11 @@
     "description": "Aplikasi PWA untuk Memenuhi Submission Pertama Dicoding Course",
     "start_url": "/index.html",
     "display": "standalone",
-    "background_color": "#00897B",
-    "theme_color": "#00897B",
+    "background_color": "#d81b60",
+    "theme_color": "#d81b60",
     "icons": [
         {
-            "src": "icon.png",
+            "src": "aset/icons/logo.png",
             "sizes": "512x512",
             "type": "image/png"
         }

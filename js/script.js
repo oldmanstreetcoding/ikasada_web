@@ -3,9 +3,10 @@
 /* eslint-disable no-undef */
 
 $(document).ready(() => {
+
     // start load menu
     $.get('../pages/component/nav.html', (data) => {
-        $('.topnav, .sidenav').html(data);
+        $('.topnav, .sidenav').append(data);
     });
 
     $('.sidenav').sidenav();

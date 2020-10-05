@@ -110,8 +110,30 @@ footer {
     margin-bottom: 20px;
 }
 
+.icon-menu {
+    width: 25px;
+    margin-top: 15px;
+}
+
+.icon-float {
+    width: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.icon-up {
+    width: 25px;
+    margin-bottom: 10px;
+}
+
+#sidemenu-title {
+    color: black;
+    margin-left: 12px;
+    margin-top: 20px;
+}
+
 @media screen and (max-width: 400px) {
-    #fotosambutan, #logoikasada {
+    #fotosambutan, #imglogo {
         display: none;
     }
 
