@@ -3,7 +3,6 @@
 /* eslint-disable no-undef */
 
 $(document).ready(() => {
-
     // start load menu
     $.get('../pages/component/nav.html', (data) => {
         $('.topnav, .sidenav').append(data);
@@ -56,10 +55,9 @@ $(document).ready(() => {
     $(document).on('click', '.btn-nav', function () {
         $('.btn-nav').css('text-decoration', 'none');
 
-        const page = $(this).attr('id');
-        $(`#${page}`).css('text-decoration', 'underline');
-
-        loadpage(page);
+        const href = $(this).attr('href').split('#');
+        $(`#${href[1]}`).css('text-decoration', 'underline');
+        loadpage(href[1]);
     });
 
     loadpage('beranda');

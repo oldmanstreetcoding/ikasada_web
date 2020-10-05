@@ -1,9 +1,10 @@
-const CACHE_NAME = 'appikasada_v2';
+const CACHE_NAME = 'cacheikasada_v2';
 const urlsToCache = [
     '/',
     '/manifest.json',
     '/favicon.ico',
     '/index.html',
+    '/icon.png',
     '/pages/component/boxlogin.html',
     '/pages/component/nav.html',
     '/pages/profil/pengurus.html',
@@ -59,12 +60,12 @@ self.addEventListener('fetch', (event) => {
             .match(event.request, { cacheName: CACHE_NAME })
             .then((response) => {
                 if (response) {
-                    console.log('ServiceWorker: Gunakan aset dari cache: ', response.url);
+                    console.log('ServiceWorker: Pakai aset dari cache: ', response.url);
                     return response;
                 }
 
                 console.log(
-                    'ServiceWorker: Memuat aset dari server: ',
+                    'ServiceWorker: Load aset dari server: ',
                     event.request.url,
                 );
                 return fetch(event.request);
