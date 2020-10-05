@@ -40,7 +40,7 @@ const urlsToCache = [
     '/aset/images/job.jpg',
     '/aset/images/ketua.jpg',
     '/aset/images/kta.jpg',
-    '/aset/images/map2.png',
+    '/aset/images/map.jpg',
     '/aset/images/slide01.jpg',
     '/aset/images/slide02.jpg',
     '/aset/images/slide03.jpg',
