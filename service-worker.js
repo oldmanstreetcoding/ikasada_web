@@ -1,6 +1,7 @@
-const CACHE_NAME = 'appikasada_v2';
+const CACHE_NAME = 'appikasada_v1';
 const urlsToCache = [
     '/',
+    '/manifest.json',
     '/icon.png',
     '/favicon.ico',
     '/index.html',
